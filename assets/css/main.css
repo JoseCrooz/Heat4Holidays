@@ -1,0 +1,1061 @@
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    /*background: #b3d4fc;*/
+    
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*
+ * RESET
+ */
+h1,h2,h3,h4,h5,h6,p,li,ul{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style-type: none;
+}
+
+html,body{
+    height:100%;
+}
+
+a{
+    cursor:pointer;
+}
+
+/*
+ * MAIN NAV
+ */
+
+#menu-main{
+    position:fixed;
+    left:0;
+    top:50%;
+    z-index:4;
+    margin-top:-100px;
+    cursor: pointer;
+}
+
+#menu-main li a{
+    background-image:url(/propane/holidaycard/assets/img/sprites/icons-sprite.png);
+    display:block;
+}
+
+#menu-main .menu-1 a{
+    background-position: 0 -1330px; 
+    width: 52px; 
+    height: 60px;
+}
+
+#menu-main .menu-1 a:hover, #menu-main .menu-1 a.on{
+    background-position: -55px -1329px;
+}
+
+#menu-main .menu-2 a{
+    background-position: 0 -1390px; 
+    width: 52px; 
+    height: 60px;
+}
+
+#menu-main .menu-2 a:hover, #menu-main .menu-2 a.on{
+    background-position: -55px -1389px;
+}
+
+#menu-main .menu-3 a{
+    background-position: 0 -1452px; 
+    width: 52px; 
+    height: 59px;
+}
+
+#menu-main .menu-3 a:hover, #menu-main .menu-3 a.on{
+    background-position: -55px -1450px; 
+    width: 52px; 
+    height: 59px;
+    margin-top:-1px;
+    margin-bottom:2px;
+    /*margin-bottom: 1px;*/
+}
+
+#menu-main .menu-4 a{
+    background: url(/propane/holidaycard/assets/img/sprites/donate-left-nav.png) 0 0; 
+    width: 52px; 
+    height: 58px;
+    margin-top: 1px;
+}
+
+#menu-main .menu-4 a:hover, #menu-main .menu-4 a.on{
+    background-position: 0 -68px; 
+    width: 52px; 
+    height: 58px;
+}
+
+.sprite-donate-off{ background-position: 0 0; width: 52px; height: 58px; } 
+.sprite-donate-on{ background-position: 0 -68px; width: 52px; height: 58px; } 
+
+/*
+ * MAIN
+ */
+#container{
+    margin:0;
+    padding:0;
+}
+
+/*
+ * PANELS
+ */
+.panel{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.panel-header{
+    background:url(/propane/holidaycard/assets/img/header-lines.png) no-repeat;
+    width:837px;
+    height:92px;
+    margin-top:30px;
+}
+
+.panel-header-house{
+    margin-top:-70px;
+    margin-left:361px;
+    cursor:pointer;
+}
+
+/*
+ * CONTENT WRAP
+ */
+.content-wrap{
+    width:837px;
+    margin:0 auto;
+}
+
+/*
+ * LANDING
+ */
+#landing{
+    background:url(/propane/holidaycard/assets/img/patterns/frost-blue.jpg) #0092c4;
+}
+
+#landing .content-wrap{
+    margin-left: 0; /*Adjust for inconsistency is psd comp*/
+}
+
+#landing h1{
+    width:806px;
+    height:151px;
+    margin-left:15px;
+    background:url(/propane/holidaycard/assets/img/copy/logo-masthead.png) no-repeat;
+}
+
+#landing .penguins{
+    background:url(/propane/holidaycard/assets/img/landing-penguins-log.png) no-repeat;
+    width:656px;
+    height:106px;
+    margin-top: -17px;
+}
+
+#landing .propane-logo{
+    background:url(/propane/holidaycard/assets/img/propane-logo.png) no-repeat;
+    width:122px;
+    height:111px;
+    position:absolute;
+    top:123px;
+    left:88px;
+}
+
+#landing .copy{
+    background:url(/propane/holidaycard/assets/img/landing-house.png) no-repeat;
+    width: 836px;
+    height: 392px;
+    position:relative;
+    margin-top:-55px;
+}
+
+#landing .mission{
+    width:420px;
+    height:120px;
+    /*overflow:auto;*/
+    position:absolute;
+    top:86px;
+    right:80px;
+    font-family: 'Open Sans', sans-serif;
+    color:#6d6e70;
+    font-size: .844em;
+    line-height:1.5em;
+}
+
+#landing .mission span{
+    display: block;
+}
+
+#landing .bird{
+    position:absolute;
+    background-image:url(/propane/holidaycard/assets/img/bird.png);
+    width:42px;
+    height:34px;
+    margin-top:-15px;
+    margin-left:700px;
+    z-index:100;
+}
+
+#landing .steps{
+    position:absolute;
+    margin-top:100px;
+    margin-left:35px;
+}
+
+.donate-links{
+    margin-top:30px;
+    margin-left:11px;
+    z-index:2;
+    position:relative;
+}
+
+.donate-links li{
+    float:left;
+}
+
+.donate-links li a{
+    background-image:url(/propane/holidaycard/assets/img/sprites/icons-sprite.png);
+    display:block;
+    /*text-indent:-99999px;*/
+}
+
+.sprite-donate-off{ background-position: 0 0; width: 195px; height: 105px; } 
+.sprite-donate-on{ background-position: 0 -115px; width: 222px; height: 79px; } 
+
+
+.donate-1 a{
+    background:url(/propane/holidaycard/assets/img/sprites/donate-sprite.png) 0 0 !important;
+    width: 195px;
+    height: 105px;
+    margin-top:-50px;
+    margin-right:10px;
+    margin-left:8px;
+}
+
+.donate-1 a:hover{
+    background-position: 0 -115px !important;
+    width: 222px;
+    height: 79px;
+    margin-top:-19px;
+    margin-left: -11px;
+    margin-right: 2px;
+    /*margin-left:-5px;
+    margin-right:3px;*/
+}
+
+.donate-hover{
+    position:absolute;
+    background:url(/propane/holidaycard/assets/img/landing-window-light.jpg) no-repeat;
+    display:none;
+    width:102px;
+    height:47px;
+    margin-top:-97px;
+    margin-left:94px;
+    opacity:0;
+    z-index:100;
+}
+
+.light-on{
+    position:absolute;
+    /*display:block;*/
+}
+
+.donate-2 a{
+    background-repeat: no-repeat;
+    background-position: 0 -364px;
+    width: 188px; 
+    height: 75px;
+    margin-top:-20px;
+    margin-right: 8px;
+}
+
+.donate-2 a:hover{
+    background-position: 0 -444px;
+}
+
+.at300b:hover{
+    opacity:1;
+}
+
+.donate-3 a{
+    background-position: 0 -526px; 
+    width: 190px; 
+    height: 73px;
+    margin-top:-18px;
+    margin-right: 15px;
+}
+
+.donate-3 a:hover{
+    background-position: 0 -606px;
+}
+
+.donate-4 a{
+    background-position: 0 -690px; 
+    width: 190px; 
+    height: 75px;
+    margin-top:-16px;
+    margin-right:7px;
+}
+
+.donate-4 a:hover{
+    background-position: 0 -770px;
+}
+
+#landing .next a{
+    background-position: 0 -81px; 
+    width: 82px; 
+    height: 40px;
+    /*margin-left:19px;*/ /*Adjust for inconsistency is psd comp*/
+}
+
+/*
+* NEXT / PREV SECTION BUTTONS
+*/
+.next a{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    background-image:url(/propane/holidaycard/assets/img/sprites/icons-sprite.png);
+    display:block;
+    margin-left: -41px;
+}
+
+.prev a{
+    position:absolute;
+    top:0;
+    left:50%;
+    background-image:url(/propane/holidaycard/assets/img/sprites/icons-sprite.png);
+    display:block;
+    margin-left: -41px;
+}
+
+.legal{
+    position:absolute;
+    opacity:.8;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    font-size: .580em;
+    bottom:50px;
+    width: 400px;
+    text-align: center;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.legal a{
+    color: #222;
+    text-decoration: none;
+}
+
+/*
+ * ABOUT
+ */
+#about{
+    /*margin:0 auto;*/
+    background:url(/propane/holidaycard/assets/img/patterns/frost-white.jpg) #dedede;
+}
+
+#about .prev a{
+    background-position: 0 -122px; 
+    width: 82px; 
+    height: 40px;
+}
+
+#about .next a{
+    background-position: 0 0;
+    width: 82px;
+    height: 41px;
+}
+
+#about .content-wrap{
+    margin:0 auto;
+    width:837px;
+    height:100%;
+}
+
+#about .about-contain{
+    margin-top:-70px;
+    margin-left:18px;
+    width:800px;
+    height:514px;
+    background:url(/propane/holidaycard/assets/img/about-bg.png) no-repeat;
+    position: relative;
+}
+
+#about .about-header{
+    margin-top:-35px;
+    height:92px;
+}
+
+#about .about-copy{
+    position:relative;
+    color:#fff;
+    top:90px;
+    left:65px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875em;
+    line-height:1.3em;
+}
+
+#about .about-copy p{
+    margin-bottom:15px;
+}
+
+#about h3{
+    margin:20px 0 20px 35px;
+    background:url(/propane/holidaycard/assets/img/copy/about-title.png) no-repeat;
+    display:block;
+    width:307px;
+    height:27px;
+}
+
+#about .statement{
+    width:400px;
+    height:225px;
+}
+
+#about .statement a{
+    color: #fff;
+}
+
+#about .statement a:hover{
+    text-decoration: none;
+}
+
+#about .about-thermo{
+    /*position:absolute;
+    top:-190px;
+    left:460px;*/
+}
+
+#about .thermo{
+    width:262px;
+    height:349px;
+    position:absolute;
+    right:0;
+}
+
+#about .thermo-top{
+    position:absolute;
+    margin-top:-190px;
+    margin-left:-36px;
+}
+
+#about .thermo-bar{
+    position:absolute;
+    margin-top:-160px;
+    width:50px;
+    height:272px;
+    overflow:hidden;
+}
+
+#mercury{
+    position:absolute;
+    top:230px;
+}
+
+#about .thermo-bg{
+    position:absolute;
+    margin-top:-170px;
+}
+
+/*
+ * WAYS TO GIVE
+ */
+#ways-to-give{
+    background:url(/propane/holidaycard/assets/img/patterns/frost-green.jpg) #358b46;
+}
+
+#ways-to-give .prev a{
+    background-image:url(/propane/holidaycard/assets/img/sprites/ways-to-give-up.png); 
+    width: 82px; 
+    height: 40px;
+}
+
+#ways-to-give .content-wrap{
+    margin-top:-40px;
+    width:837px;
+}
+
+#ways-to-give .panel-header{
+    margin-top:70px;
+}
+
+#ways-to-give .intro{
+    /*background:url(/propane/holidaycard/assets/img/h4h-logo.png) no-repeat center top;*/
+    margin-top:-30px;
+}
+
+#ways-to-give .intro h3{
+    background:url(/propane/holidaycard/assets/img/copy/other-ways-to-give.png) no-repeat;
+    width:634px;
+    height:29px;
+    margin:0 auto 20px auto;
+}
+
+#ways-to-give .intro p{
+    text-align: center;
+    color:#fff;
+    padding:0 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875em;
+}
+
+#ways-to-give .intro span{
+    display:block;
+}
+
+#ways-to-give .charities{
+    width:836px;
+    margin:35px auto 0 auto;
+}
+
+#ways-to-give .legal{
+    bottom:25px;
+}
+
+.charities .row{
+    background:url(/propane/holidaycard/assets/img/row-br.png) no-repeat left bottom;
+    height:100px;
+}
+
+.charities p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: .775em;
+}
+
+.charities .col-1{
+    float:left;
+    width:430px;
+    /*margin-right:19px;*/
+}
+
+.charities .col-2{
+    float:left;
+    width:390px;
+}
+
+.charities .col-1 p.logo{
+    float:left;
+    width:149px;
+    margin-top:10px;
+}
+
+.charities .desc{
+    color:#fff;
+    margin-left:25px;
+}
+
+.charities .col-1 p.desc{
+    float:left;
+    width:184px;
+}
+
+.charities .col-1 p.desc.salvation{
+    margin-top:12px;
+}
+
+.charities .col-1 p.desc.toys{
+    margin-top:12px;
+}
+
+.charities .col-2 p.desc.mazon{
+    margin-top:5px;
+}
+
+.charities .col-2 p.desc.kiva{
+    margin-top:12px;
+}
+
+.charities .col-2 p.desc.one-warm-coat{
+    margin-top:13px;
+}
+
+.charities .col-2 p.desc.modest-needs{
+    margin-top:5px;
+}
+
+.charities .col-2 p.logo{
+    float:left;
+    width:150px;
+}
+
+.charities .col-2 p.logo.kiva{
+    margin-top:10px;
+}
+
+.charities .col-2 p.logo.mazon{
+    margin-top:18px;
+}
+
+.charities .col-2 p.logo.one-warm-coat{
+    margin-top:7px;
+}
+
+.charities .col-2 p.logo.modest-needs{
+    margin-top:10px;
+}
+
+.charities .col-2 p.desc{
+    float:left;
+    width:210px;
+}
+
+.charity{
+    position:relative;
+    padding:10px 0;
+    /*cursor: pointer;*/
+}
+
+.charity .desc a{
+    color: #fff;
+}
+
+.charity .desc a:hover{
+    text-decoration: none;
+    }
+
+.charity p.logo a{
+    background-image:url(/propane/holidaycard/assets/img/sprites/icons-sprite.png);
+    margin:0 auto;
+    display:block;
+}
+
+.charity-1 .logo a{
+    background-position: 0 -850px; 
+    width: 133px; 
+    height: 44px;
+    line-height:34px;
+}
+
+.charity-1 .desc{
+    margin-top:5px;
+}
+
+.charity-2 .logo a{
+    background-position: 0 -901px; 
+    width: 134px; 
+    height: 27px;
+}
+
+.charity-3 .logo a{
+    background-position: 0 -934px; 
+    width: 104px; 
+    height: 53px;
+}
+
+.charity-3 .desc{
+    padding-top:15px;
+}
+
+.charity-4 .logo a{
+    background-position: 0 -990px; 
+    width: 102px; 
+    height: 54px;
+}
+
+.charity-5 .logo a{
+    background-position: 0 -1054px; 
+    width: 55px; 
+    height: 67px;
+}
+
+.charity-6 .logo a{
+    background-position: 0 -1136px; 
+    width: 72px; 
+    height: 70px;
+}
+
+.charity-7 .logo a{
+    background-position: 0 -1220px; 
+    width: 145px; 
+    height: 48px;
+}
+
+.charity-8 .logo a{
+    background-position: 0 -1275px; 
+    width: 143px; 
+    height: 45px;
+}
+
+/*
+ * TERMS AND CONDITIONS
+ */
+
+.terms-of-use{
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin: -135px 0 0 -300px;
+    display:none;
+    width:600px;
+    height:270px;
+    background-color:#fff;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    z-index:200;
+}
+
+.tu-wrapper{
+    margin-top:40px;
+    margin-left:50px;
+    padding-right:15px;
+    width:500px;
+    height:200px;
+    font-family: 'Open Sans', sans-serif;
+    color:#6d6e70;
+    font-size: .744em;
+    line-height:1.5em;
+    overflow:auto;
+}
+
+.tu-wrapper p{
+    margin-bottom: 10px;
+}
+
+.tu-wrapper p strong{
+    margin-top:25px;
+    display:block;
+}
+.tu-wrapper .head1 strong{
+    margin-top:0;
+}
+
+.tu-close{
+    position:absolute;
+    margin-top:-230px;
+    margin-left:550px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .744em;
+    color:#6d6e70;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  top: 0px;
+  left: 0px;
+  margin:0 auto;
+  display: none;
+  cursor: pointer;
+  z-index: 199;
+}
+
+.stop-modal-scroll{
+    overflow: hidden;
+}
+
+/*
+ * FOOTER
+ */
+
+footer{}
+
+footer ul{
+    text-align:center;
+}
+
+footer li{
+    display:inline;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+footer li:after{
+    content: "/";
+    margin-right:5px;
+    padding-left:5px;
+}
+
+footer li:last-child:after {
+    content: "";
+    margin-right:0;
+}
+
+/*ShareThis*/
+#stwrapper{ /*Center modal*/
+    top: 50% !important;
+    margin-top: -220px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
